@@ -40,3 +40,25 @@ C:\anthony\NDU\3rd year\FALL 2024\CSC 413 - Parallel and Distributed Computing\P
 C:\anthony\NDU\3rd year\FALL 2024\CSC 413 - Parallel and Distributed Computing\Project\Voting System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\ref\VotingSystem.dll
 C:\Users\Admin\source\repos\Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.DrPaulWinsForm.resources
 C:\Users\Admin\source\repos\Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.TrumpWinsForm.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\bin\Debug\net8.0-windows\VotingSystem.exe
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\bin\Debug\net8.0-windows\VotingSystem.deps.json
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\bin\Debug\net8.0-windows\VotingSystem.runtimeconfig.json
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\bin\Debug\net8.0-windows\VotingSystem.dll
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\bin\Debug\net8.0-windows\VotingSystem.pdb
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.AdminScreen.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.DrPaulWinsForm.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.LoginForm.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.TrumpWinsForm.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.VoterScreen.resources
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.sourcelink.json
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.dll
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\refint\VotingSystem.dll
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.pdb
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\VotingSystem.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\My-Voting-System\VotingSystem\VotingSystem\obj\Debug\net8.0-windows\ref\VotingSystem.dll

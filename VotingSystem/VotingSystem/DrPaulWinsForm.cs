@@ -16,5 +16,10 @@ namespace VotingSystem
         {
             InitializeComponent();
         }
+
+        private void lblTumpWonMessage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

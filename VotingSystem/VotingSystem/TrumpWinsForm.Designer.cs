@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrumpWinsForm));
             pictureBox1 = new PictureBox();
             lblTrumpWonTitle = new Label();
             lblTumpWonMessage = new Label();
@@ -36,7 +37,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Donald_Trump;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(330, 87);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(311, 326);
@@ -60,12 +61,12 @@
             lblTumpWonMessage.AutoSize = true;
             lblTumpWonMessage.BackColor = Color.Red;
             lblTumpWonMessage.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTumpWonMessage.Location = new Point(266, 434);
+            lblTumpWonMessage.Location = new Point(133, 434);
             lblTumpWonMessage.Name = "lblTumpWonMessage";
             lblTumpWonMessage.RightToLeft = RightToLeft.No;
-            lblTumpWonMessage.Size = new Size(465, 87);
+            lblTumpWonMessage.Size = new Size(707, 87);
             lblTumpWonMessage.TabIndex = 9;
-            lblTumpWonMessage.Text = "Donald J. Trump has been Elected  \r\nas the new president of the \r\nUnited States of America";
+            lblTumpWonMessage.Text = "CANDIDATE 1 HAS ACHIEVED AN UNPRECEDENTED VICTORY,\r\nUNITING THE NATION WITH HIS VISIONARY LEADERSHIP AS \r\nTHE NEW PRESIDENT OF THE UNITED STATES OF AMERICA!\r\n";
             lblTumpWonMessage.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // TrumpWinsForm

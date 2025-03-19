@@ -81,7 +81,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Donald_Trump;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(81, 131);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(301, 269);
@@ -91,7 +91,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.Dr__Paul_Akiki;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(566, 131);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(301, 269);
@@ -112,6 +112,7 @@
             progressBarPaul.Name = "progressBarPaul";
             progressBarPaul.Size = new Size(301, 41);
             progressBarPaul.TabIndex = 6;
+            progressBarPaul.Click += progressBarPaul_Click;
             // 
             // lblAdminTitle
             // 
@@ -131,9 +132,9 @@
             lblDrPaul.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDrPaul.Location = new Point(627, 99);
             lblDrPaul.Name = "lblDrPaul";
-            lblDrPaul.Size = new Size(198, 29);
+            lblDrPaul.Size = new Size(165, 29);
             lblDrPaul.TabIndex = 8;
-            lblDrPaul.Text = "Dr. Paul Akiki";
+            lblDrPaul.Text = "Candidate 2";
             // 
             // lblDonaldTrump
             // 
@@ -142,9 +143,9 @@
             lblDonaldTrump.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDonaldTrump.Location = new Point(128, 99);
             lblDonaldTrump.Name = "lblDonaldTrump";
-            lblDonaldTrump.Size = new Size(201, 29);
+            lblDonaldTrump.Size = new Size(164, 29);
             lblDonaldTrump.TabIndex = 9;
-            lblDonaldTrump.Text = "Donald Trump";
+            lblDonaldTrump.Text = "Candidate 1";
             // 
             // lblDonaldvoteCount
             // 

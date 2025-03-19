@@ -12,8 +12,8 @@ namespace VotingSystem
 
         static VotingContext()
         {
-            Candidates.Add(new Candidate("Donald Trump"));
-            Candidates.Add(new Candidate("Dr. Paul Akiki"));
+            Candidates.Add(new Candidate("Candidate 1"));
+            Candidates.Add(new Candidate("Candidate 2"));
         }
     }
 }

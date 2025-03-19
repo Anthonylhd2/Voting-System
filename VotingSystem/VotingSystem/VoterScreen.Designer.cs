@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VoterScreen));
             btnVoterLogout = new Button();
             btnPaulVote = new Button();
             btnDonaldVote = new Button();
@@ -83,11 +84,11 @@
             lblDonaldMoto.AutoSize = true;
             lblDonaldMoto.BackColor = Color.CadetBlue;
             lblDonaldMoto.Font = new Font("Calibri", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblDonaldMoto.Location = new Point(25, 442);
+            lblDonaldMoto.Location = new Point(46, 442);
             lblDonaldMoto.Name = "lblDonaldMoto";
-            lblDonaldMoto.Size = new Size(288, 28);
+            lblDonaldMoto.Size = new Size(251, 28);
             lblDonaldMoto.TabIndex = 16;
-            lblDonaldMoto.Text = "\"Make America Great Again\"";
+            lblDonaldMoto.Text = "\"Tech for a better world!\"";
             // 
             // lblPaulMoto
             // 
@@ -102,7 +103,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Donald_Trump;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(20, 158);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(301, 269);
@@ -112,7 +113,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.Dr__Paul_Akiki;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(505, 158);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(301, 269);
@@ -127,20 +128,20 @@
             lblDrPaul.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDrPaul.Location = new Point(566, 126);
             lblDrPaul.Name = "lblDrPaul";
-            lblDrPaul.Size = new Size(198, 29);
+            lblDrPaul.Size = new Size(165, 29);
             lblDrPaul.TabIndex = 12;
-            lblDrPaul.Text = "Dr. Paul Akiki";
+            lblDrPaul.Text = "Candidate 2";
             // 
             // lblDonaldTrump
             // 
             lblDonaldTrump.AutoSize = true;
             lblDonaldTrump.BackColor = Color.CadetBlue;
             lblDonaldTrump.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDonaldTrump.Location = new Point(67, 126);
+            lblDonaldTrump.Location = new Point(81, 126);
             lblDonaldTrump.Name = "lblDonaldTrump";
-            lblDonaldTrump.Size = new Size(201, 29);
+            lblDonaldTrump.Size = new Size(164, 29);
             lblDonaldTrump.TabIndex = 13;
-            lblDonaldTrump.Text = "Donald Trump";
+            lblDonaldTrump.Text = "Candidate 1";
             // 
             // label2
             // 

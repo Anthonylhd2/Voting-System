@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrPaulWinsForm));
             pictureBox1 = new PictureBox();
             lblTrumpWonTitle = new Label();
             lblTumpWonMessage = new Label();
@@ -36,7 +37,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Dr__Paul_Akiki;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(245, 62);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(311, 326);
@@ -63,10 +64,11 @@
             lblTumpWonMessage.Location = new Point(23, 406);
             lblTumpWonMessage.Name = "lblTumpWonMessage";
             lblTumpWonMessage.RightToLeft = RightToLeft.No;
-            lblTumpWonMessage.Size = new Size(741, 87);
+            lblTumpWonMessage.Size = new Size(708, 87);
             lblTumpWonMessage.TabIndex = 10;
-            lblTumpWonMessage.Text = "DR. PAUL AKIKI HAS ACHIEVED AN UNPRECEDENTED VICTORY,\r\nUNITING THE NATION WITH HIS VISIONARY LEADERSHIP AS \r\nTHE NEW PRESIDENT OF THE UNITED STATES OF AMERICA!";
+            lblTumpWonMessage.Text = "CANDIDATE 2 HAS ACHIEVED AN UNPRECEDENTED VICTORY,\r\nUNITING THE NATION WITH HIS VISIONARY LEADERSHIP AS \r\nTHE NEW PRESIDENT OF THE UNITED STATES OF AMERICA!";
             lblTumpWonMessage.TextAlign = ContentAlignment.MiddleCenter;
+            lblTumpWonMessage.Click += lblTumpWonMessage_Click;
             // 
             // DrPaulWinsForm
             // 

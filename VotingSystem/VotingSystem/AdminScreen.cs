@@ -48,29 +48,29 @@ namespace VotingSystem
 
         private async Task UpdateProgressBarsAsync()
         {
-            while (true) 
+            while (true)
             {
-                var donald = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Donald Trump");
-                var paul = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Dr. Paul Akiki");
+                var candidate1 = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Candidate 1");
+                var candidate2 = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Candidate 2");
 
-                if (donald != null && paul != null)
+                if (candidate1 != null && candidate2 != null)
                 {
-                    int totalVotes = donald.voteCount + paul.voteCount;
-                    int donaldPercentage = totalVotes > 0 ? (donald.voteCount * 100) / totalVotes : 0;
-                    int paulPercentage = totalVotes > 0 ? (paul.voteCount * 100) / totalVotes : 0;
+                    int totalVotes = candidate1.voteCount + candidate2.voteCount;
+                    int donaldPercentage = totalVotes > 0 ? (candidate1.voteCount * 100) / totalVotes : 0;
+                    int paulPercentage = totalVotes > 0 ? (candidate2.voteCount * 100) / totalVotes : 0;
 
                     // Report progress to update UI
                     ((IProgress<int>)donaldProgress).Report(donaldPercentage);
                     ((IProgress<int>)paulProgress).Report(paulPercentage);
                 }
 
-                await Task.Delay(1000); 
+                await Task.Delay(1000);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             var confirmation = MessageBox.Show(
                 "Are you sure you want to end the elections?",
                 "End of Elections Confirmation",
@@ -80,40 +80,40 @@ namespace VotingSystem
             if (confirmation == DialogResult.Yes)
             {
                 // Fetch candidates
-                var donald = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Donald Trump");
-                var paul = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Dr. Paul Akiki");
+                var candidate1 = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Candidate 1");
+                var candidate2 = VotingContext.Candidates.FirstOrDefault(c => c.Name == "Candidate 2");
 
-                if (donald == null || paul == null)
+                if (candidate1 == null || candidate2 == null)
                 {
                     MessageBox.Show("Candidates not found. Please verify the election setup.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                
+
                 string winner;
-                if (donald.voteCount > paul.voteCount)
+                if (candidate1.voteCount > candidate2.voteCount)
                 {
                     // Release the semaphore slot
                     _authenticationSystem.LogoutUser(_user);
-                   
-                    
+
+
                     //Checks if the current thread calling the hide method for login form is not the UI thread it was created on.
                     if (_loginForm.InvokeRequired)
                     {
                         _loginForm.Invoke(new MethodInvoker(() => _loginForm.Close()));
                     }
                     this.Hide();
-                    
+
                     var trumpWinsForm = new TrumpWinsForm();
                     trumpWinsForm.ShowDialog();
                     this.Close();
                 }
-                else if (paul.voteCount > donald.voteCount)
+                else if (candidate2.voteCount > candidate1.voteCount)
                 {
                     // Release the semaphore slot
                     _authenticationSystem.LogoutUser(_user);
-                   
-                    
+
+
                     if (_loginForm.InvokeRequired)
                     {
                         _loginForm.Invoke(new MethodInvoker(() => _loginForm.Hide()));
@@ -129,7 +129,7 @@ namespace VotingSystem
                 }
                 else
                 {
-                    winner = $"It's a tie! Both candidates received {donald.voteCount + paul.voteCount} votes.";
+                    winner = $"It's a tie! Both candidates received {candidate1.voteCount + candidate2.voteCount} votes.";
                     // Display no winner
                     this.Close();
                     if (_loginForm.InvokeRequired)
@@ -143,13 +143,18 @@ namespace VotingSystem
                     }
                 }
 
-                
 
-                
 
-                
-                
+
+
+
+
             }
+        }
+
+        private void progressBarPaul_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
